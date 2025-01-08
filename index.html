@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+
+  <body background="bkg-final.png">
+
+    <div class="main-container">
+    <ul class="orderOfAppearance">
+      
+      <li>
+          <h1>Currency Converter</h1>
+      </li>
+
+
+      <li>
+        <div class="label-container">
+          <div for="from-currency" class="From-div">From</div>
+          <div for="to-currency" class="To-div">To</div>
+        </div>
+      </li>
+          
+            
+      <li>
+        <div class="currency-container">
+          <select id="from-currency" class="UserInput">
+            <option value="AED">UAE Dirham</option>
+            <option value="AFN">Afghan Afghani</option>
+            <option value="ANG">Netherlands Antillian</option>
+            <option value="ARS">Argentine Peso</option>
+            <option value="AUD">Australian Dollar</option>
+            <option value="BDT">Bangladeshi Taka</option>
+            <option value="BRL">Brazilian Real</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="CHF">Swiss Franc</option>
+            <option value="CNY">Chinese Renminbi</option>
+            <option value="DKK">Danish Krone</option>
+            <option value="EGP">Egyptian Pound</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">Pound Sterling</option>
+            <option value="GHS">Ghanaian Cedi</option>
+            <option value="HKD">Hong Kong Dollar</option>
+            <option value="IDR">Indonesian Rupiah</option>
+            <option value="ILS">Israeli New Shekel</option>
+            <option value="INR">Indian Rupee</option>
+            <option value="IQD">Iraqi Dinar</option>
+            <option value="IRR">Iranian Rial</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="KRW">South Korean Won</option>
+            <option value="LKR">Sri Lanka Rupee</option>
+            <option value="MXN">Mexican Peso</option>
+            <option value="NOK">Norwegian Krone</option>
+            <option value="NPR">Nepalese Rupee</option>
+            <option value="NZD">New Zealand Dollar</option>
+            <option value="PGK">Papua New Guinean Kina</option>
+            <option value="RUB">Russian Ruble</option>
+            <option value="SEK">Swedish Krona</option>
+            <option value="SGD">Singapore Dollar</option>
+            <option value="TRY">Turkish Lira</option>
+            <option value="USD">United States Dollar</option>
+            <option value="ZWL">Zimbabwean Dollar</option>
+          </select>
+
+            <!-- INSERT SWAP BUTTON HERE -->
+
+          <select id="to-currency" class="UserInput">
+              <option value="AED">UAE Dirham</option>
+              <option value="AFN">Afghan Afghani</option>
+              <option value="ANG">Netherlands Antillian</option>
+              <option value="ARS">Argentine Peso</option>
+              <option value="AUD">Australian Dollar</option>
+              <option value="BDT">Bangladeshi Taka</option>
+              <option value="BRL">Brazilian Real</option>
+              <option value="CAD">Canadian Dollar</option>
+              <option value="CHF">Swiss Franc</option>
+              <option value="CNY">Chinese Renminbi</option>
+              <option value="DKK">Danish Krone</option>
+              <option value="EGP">Egyptian Pound</option>
+              <option value="EUR">Euro</option>
+              <option value="GBP">Pound Sterling</option>
+              <option value="GHS">Ghanaian Cedi</option>
+              <option value="HKD">Hong Kong Dollar</option>
+              <option value="IDR">Indonesian Rupiah</option>
+              <option value="ILS">Israeli New Shekel</option>
+              <option value="INR">Indian Rupee</option>
+              <option value="IQD">Iraqi Dinar</option>
+              <option value="IRR">Iranian Rial</option>
+              <option value="JPY">Japanese Yen</option>
+              <option value="KRW">South Korean Won</option>
+              <option value="LKR">Sri Lanka Rupee</option>
+              <option value="MXN">Mexican Peso</option>
+              <option value="NOK">Norwegian Krone</option>
+              <option value="NPR">Nepalese Rupee</option>
+              <option value="NZD">New Zealand Dollar</option>
+              <option value="PGK">Papua New Guinean Kina</option>
+              <option value="RUB">Russian Ruble</option>
+              <option value="SEK">Swedish Krona</option>
+              <option value="SGD">Singapore Dollar</option>
+              <option value="TRY">Turkish Lira</option>
+              <option value="USD">United States Dollar</option>
+              <option value="ZWL">Zimbabwean Dollar</option>
+          </select>
+  
+        </div>
+      </li>
+            
+
+      <li>
+        <div class="amount-result-labels">
+          <div class="amount"> Amount </div>
+          
+          <div class="result">  Converted Value </div>
+        </div>
+      </li>
+
+          
+      <li>
+        <div class="amount-result">
+          <input class="amount-box" type="number" id="amount" placeholder="Enter amount" />
+          
+          <div class="result-box">
+            <span class="final-result" id="converted-value">-</span>
+          </div>
+        </div>
+      </li>
+          
+      
+      <li>
+        <div class="the-convert-button">
+          <button class="convert" onclick="convertCurrency()">Convert</button>
+          <button id="clear-button">Clear</button>
+        </div>
+      </li>
+
+
+      <li>
+        <div class="paths-container">
+          <h2>Best Conversion Paths:</h2>
+          <ul id="conversion-paths">
+            <!-- The paths will be dynamically added here -->
+          </ul>
+        </div>
+      </li>
+
+
+    </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

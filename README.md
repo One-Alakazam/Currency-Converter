@@ -35,7 +35,9 @@ This project is a simple currency converter built using HTML, CSS, and JavaScrip
 
 ## Creator
   Rashi Mullick
+  
   24B3967
+  
   1st year UG Electrical Department
 
 

@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(233, 228, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    background-color: rgb(37, 57, 49); 
+    padding: 20px;
+    border-radius: 8px;
+    width: 100vh;
+    color: rgb(233, 228, 207);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.orderOfAppearance {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.label-container, .amount-result-labels {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.From-div, .To-div, .amount, .result {
+    justify-content: left;
+    align-items: left;
+    width: 50vh;
+}
+
+.currency-container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.UserInput {
+    border-radius: 8px;
+    height: 30px;
+    width: 50vh;
+    background-color: #d5f5d8;
+    margin-right: 20px;
+}
+
+.amount-result {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.amount-box {
+    margin-top: 20px;
+    background-color: #e0f7e3;
+    width: 100vh;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.result-box {
+    background-color: #e0f7e3;
+    color: black;
+    width: 100vh;
+    height: 47px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.converted-value {
+    color: black;
+}
+
+.currency-select, #amount {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #48af7cc6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #4ed293;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    width: 40px;
+    height: 50px;
+}
+
+.placehold {
+    color: rgb(37, 57, 49);
+}
+
+.paths-container {
+    margin-top: 20px;
+}
+
+#conversion-paths {
+    list-style-type: none;
+    padding: 0;
+}
+
+#conversion-paths li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #60866d;
+    border-radius: 4px;
+    color: #fff;
+}
